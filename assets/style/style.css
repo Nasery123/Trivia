@@ -1,1 +1,67 @@
 /* BASIC STYLES HERE */
+body{
+    position: relative;
+}
+:root{
+    --primary-color:black;--secondary-color:white;
+    background-color: white;
+}
+.dark-them{
+     --primary-color:white;--secondary-color:black;
+     background-color: black;
+}
+.bike-container{
+    position: relative;
+}
+.bike{
+    transform: rotateY(180deg);
+    height: 100px;
+    width: 110px;
+}
+.bike{
+    position: absolute;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px black;
+    animation-timing-function: linear;
+
+
+}
+@keyframes drive {
+    from{transform:translateX(-100px)}
+    to{transform: translateX(1500px);}
+
+}
+.car{
+    position: absolute;
+    left: 0px;
+    animation-name:drive;
+    height: 120px;
+    width: 110px;
+    animation-iteration-count:infinite;
+    animation-duration:6s;
+    animation-fill-mode: both;
+    border-radius: 10px;
+    animation-timing-function: linear;
+
+}
+.moon{
+    height: 50px;
+    width: 50px;
+    text-align: right;
+}
+/* .options{
+    color:var(--primary-color);
+
+} */
+.question{
+    color:var(--primary-color)
+}
+.text{
+    color:var(--primary-color)
+}

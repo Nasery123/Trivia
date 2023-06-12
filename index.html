@@ -23,15 +23,24 @@
           loading="lazy">
         <span class="ms-2">Trivia</span>
       </a>
+      <p><span id="moon" class="moon mdi mdi-weather-night"></span></p>
     </nav>
   </header>
+  <section class="row">
+    <div class="bik-container">
+      <img class="bike"
+        src="https://media.istockphoto.com/id/1222528432/photo/car-small-cartoon-side.jpg?s=612x612&w=0&k=20&c=e85Dt_pCVLEEZD4yvgpl9LoEo_SEeU85L9fOMIFvXiM="
+        alt="a car"></img>
+      <hr>
+    </div>
+  </section>
   <main>
     <div class="container-fluid">
       <div class="row text-center my-5">
-        <p>🤔 QUESTION 🤔</p>
+        <p class="question">🤔 QUESTION 🤔</p>
         <div class="col-12">
           <!-- <div id="app"> -->
-          <div id="question">
+          <div class="options" id="question">
             <!-- <div class="question col-12">1: this is the first question </div>
             <div class="row mt-4">
               <div class="col-6">option A:</div>
@@ -46,6 +55,11 @@
       </div>
     </div>
     </div>
+    <div class="fast">
+      <img class="car"
+        src="https://as2.ftcdn.net/v2/jpg/05/32/95/65/1000_F_532956579_a7Nft0V3wgIc1RuG3akSOBqBbpS7OumR.jpg" alt="">
+    </div>
+    <hr>
   </main>
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
@@ -62,6 +76,12 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
     integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
   <script src="app/App.js" type="module"></script>
+  <script>
+    var icon = document.getElementById('moon');
+    icon.onclick = function () {
+      document.body.classList.toggle("dark-them")
+    }
+  </script>
 </body>
 
 </html>

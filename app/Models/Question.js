@@ -16,7 +16,7 @@ export class Question {
       return `
         <section class="row">
         <div class="col-12 text-center">
-          <p>${this.question}</p>
+          <p class="text">${this.question}</p>
         </div>
       </section>
       <section class="row">
